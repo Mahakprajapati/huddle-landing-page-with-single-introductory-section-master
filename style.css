@@ -1,0 +1,133 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+*{
+  box-sizing: border-box;
+}
+main{
+  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    
+}
+.container {
+  /* background-image: url(./huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat; */
+  max-width: 278px;
+  background-color: var(--Violet);
+  padding-block: 2em;
+}
+
+.container > img{
+  max-width: 95px;
+  margin-left: 2em;
+} 
+
+.inner-container {
+  padding: 1.7em;
+  color: #fff;
+  text-align: center;
+}
+
+.inner-container  img {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+.text h1{
+  font-size: 1.2rem;
+  font-family: 'Open Sans',sans-serif;
+  line-height: 1.3em;
+}
+.text  p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.5em;
+}
+.text a {
+  display: block;
+    text-decoration: none;
+    color: var(--Violet);
+    background-color: #fff;
+    padding: 1em 3em;
+    border-radius: 2em;
+    font-size: 0.6rem;
+    margin-inline: 2em;
+    font-family: 'Open Sans', sans-serif;
+}
+.text a:hover{
+  color: #fff;
+  background-color: var(--Soft-Magenta);
+}
+.logos{
+  display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.logos i{
+  border-radius: 50%;
+    border: 0.1em solid #fff;
+    padding: 0.5em;
+    margin-inline: 0.4em;
+    width: 35px;
+    color: #fff;
+    text-align: center;
+}
+.logos i:hover{
+  color: var(--Soft-Magenta);
+  border:  0.1em solid var(--Soft-Magenta);
+}
+@media (max-width:1044px){
+  .container {
+    background-image: url(./huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    max-width: 278px;
+  } 
+}
+
+@media(min-width:1044px){
+  .container {
+    background-image: url(./huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: unset;
+    
+  } 
+  .container > img{
+    max-width: 13rem;;
+  }
+  .inner-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr
+  }
+  .text{
+    margin-inline: 2em;
+        text-align: start;
+
+    
+  }
+  .text h1{
+    font-size: 2.8rem;
+  }
+  .text p{
+    font-size: 1.12rem;
+    margin-bottom: 2em;
+  }
+  .text a{
+    display: unset;
+        margin: 0;
+        padding: 1em 4em;
+        font-size: 1rem;
+  }
+  .logos{
+    justify-content: end;
+    margin-right: 5em;
+  }
+}
