@@ -10,16 +10,13 @@ main{
     display: flex;
     justify-content: center;
     align-items: baseline;
+    overflow: hidden;
     
 }
 .container {
-  /* background-image: url(./huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
-  background-size: 100%;
-  background-position: top;
-  background-repeat: no-repeat; */
   max-width: 278px;
   background-color: var(--Violet);
-  padding-block: 2em;
+  padding-block: 1em;
 }
 
 .container > img{
